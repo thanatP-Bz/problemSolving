@@ -1,6 +1,10 @@
 const nums = [2, 7 ,11 ,15];
 const target = 13;
 
+
+
+
+
 const firstTwoSum = function (nums, target) {
     const map = {};
     for (let i = 0; i < nums.length; i++) {
