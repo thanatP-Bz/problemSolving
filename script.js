@@ -63,6 +63,25 @@ const SecondTwoSum = (nums, target) => {
 };
 
 const nums = [2, 7 ,11 ,15];
-const target = 9;
+const target = 10;
 
-console.log(SecondTwoSum(nums, target));
+
+///////////////////
+const testNum = [2, 4, 6, 9];
+
+const theTwoSum = (testNum, target) => {
+    const map = {};
+for (let i = 0; i < testNum.length; i++) {
+    const value = testNum[i];
+    const compPair = target - value;
+    
+    if (map[compPair] !== undefined) {
+        return [map[compPair], i];
+    }
+     map[value] = i;
+    }
+};
+
+console.log(theTwoSum(testNum, target));
+
+
