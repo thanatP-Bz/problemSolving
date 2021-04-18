@@ -1,6 +1,6 @@
 
 ////////////////////////////////////
-/* const firstTwoSum = function (nums, target) {
+ const firstTwoSum = function (nums, target) {
     const map = {};
     for (let i = 0; i < nums.length; i++) {
          const value = nums[i];
@@ -12,11 +12,11 @@
              map[value] = i;
          }
     }
-}; */
+}; 
 
 
 ////////////////////////////////////
-/*  let twoSum = function (nums, target) {
+  let twoSum = function (nums, target) {
     for (let i = 0; i < nums.length; i++) {
         for (let j = i + 1; j < nums.length; j++) {
              if (nums[i] + nums[j] === target) {
@@ -24,10 +24,10 @@
              }
         }
     }
-}; */
+}; 
 /////////////////////////////////////
 
-/* const numbers = [2, 4, 5, 17];
+const numbers = [2, 4, 5, 17];
 const targetTwo = 9;
 
 
@@ -43,7 +43,7 @@ for (let i = 0; i < num1.length; i++) {
     }
   }
 };
- */
+ 
 
 ///////////////////////////////
 
