@@ -8,8 +8,6 @@ function solution(str, ending) {
   // TODO: complete
   for (let i = 0; i < str.length; i++) {
     for (let j = 0; j < ending.length; j++) {}
-
-    console.log(str[i] == ending[i]);
   }
 }
 solution("abc", "abd");
@@ -63,4 +61,41 @@ function check(a, x) {
   return a.includes(x);
 }
 
-console.log(check(checkNum, 4));
+let btn = document.getElementById("btn");
+
+let p1Score = [4, 2, 5, 4, 5, 6, "4", "5"];
+let p2Score = [1, 5, 3, 1, 7, 2];
+
+let p1 = 0;
+let p2 = 0;
+
+for (let i = 0; i < p1Score.length; i++) {
+  if (p1Score[i] > p2Score[i]) {
+    p1++;
+  }
+  if (p1Score[i] < p2Score[i]) {
+    p2++;
+  }
+}
+
+/* var results = {
+  Alice: 0,
+  Bob: 0,
+}; */
+//sum of array string
+/* let getNum = arrNum.map((n) => parseInt(n)).reduce((a, b) => a + b); */
+
+/* 
+function countSheeps(arrayOfSheep) {
+  return arrayOfSheep.filter(Boolean).length;
+}
+ */
+
+function validatePIN(pin) {
+  return /^(\d{4}|\d{6})$/.test(pin);
+}
+
+console.log(validatePIN("1234"));
+
+let test = "";
+console.log(test.length);
