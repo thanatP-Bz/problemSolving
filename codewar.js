@@ -95,7 +95,21 @@ function validatePIN(pin) {
   return /^(\d{4}|\d{6})$/.test(pin);
 }
 
-console.log(validatePIN("1234"));
-
 let test = "";
-console.log(test.length);
+
+let mid = "test";
+
+const getMiddle = function (s) {
+  let str = s.split("");
+  return str;
+};
+
+const maltiple = (a, b) => {
+  return a + b;
+};
+
+function oddOrEven(arr) {
+  return arr.reduce((a, b) => ((a + b, 0) % 2 === 0 ? "even" : "odd"));
+}
+
+console.log(oddOrEven([1]));
