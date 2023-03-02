@@ -109,7 +109,36 @@ const maltiple = (a, b) => {
 };
 
 function oddOrEven(arr) {
-  return arr.reduce((a, b) => ((a + b, 0) % 2 === 0 ? "even" : "odd"));
+  if (arr.length === 0) {
+    return "even";
+  }
+
+  let sum = arr.reduce((a, b) => a + b);
+  return sum % 2 === 0 ? "even" : "odd";
 }
 
-console.log(oddOrEven([1]));
+function friend(friends) {
+  //your code here
+  return friends.filter((f) => f.length === 4);
+}
+
+console.log(friend(["Love", "Your", "Face", "1"]));
+
+function sortArray(array) {
+  // Return a sorted array.
+  let odd = array.filter((odd) => odd % 2).sort((a, b) => a - b);
+
+  return array.map((x) => (x % 2 ? odd.shift() : x));
+}
+
+const testShift = (array) => {
+  let odd = array.filter((odd) => odd % 2 === 0).sort((a, b) => a - b);
+  return array.map((x) => (x % 2 ? x : odd.shift()));
+};
+
+const zeroFuel = (distanceToPump, mpg, fuelLeft) => {
+  // TODO
+  return mpg * fuelLeft >= distanceToPump;
+};
+
+console.log(zeroFuel(50, 25, 3));
