@@ -141,4 +141,61 @@ const zeroFuel = (distanceToPump, mpg, fuelLeft) => {
   return mpg * fuelLeft >= distanceToPump;
 };
 
-console.log(zeroFuel(50, 25, 3));
+function repeatStr(n, s) {
+  let char = "";
+
+  for (let i = 1; i <= n; i++) {
+    char += s;
+  }
+
+  return char;
+}
+
+function boolToWord(bool) {
+  //...
+  return bool ? true : false;
+}
+
+function sumTwoSmallestNumbers(numbers) {
+  //Code here
+  return numbers
+    .sort((a, b) => a - b)
+    .slice(0, 2)
+    .reduce((a, b) => a + b);
+}
+
+console.log(sumTwoSmallestNumbers([10, 343445353, 3453445, 3453545353453]));
+
+const rps = (p1, p2) => {
+  if (p1 === "rock" && p2 === "scissors") {
+    ("Player 1 won!");
+  }
+  if (p1 === "scissors" && p2 === "paper") {
+    ("Player 1 won!");
+  }
+  if (p1 === "paper" && p2 === "rock") {
+    ("Player 1 won!");
+  }
+
+  if (p2 === "rock" && p1 === "scissors") {
+    ("Player 2 won!");
+  }
+  if (p2 === "scissors" && p1 === "paper") {
+    ("Player 2 won!");
+  }
+  if (p2 === "paper" && p1 === "rock") {
+    ("Player 2 won!");
+  }
+
+  if (p1 === "rock" && p2 === "rock") {
+    ("Draw!");
+  }
+  if (p1 === "paper" && p2 === "paper") {
+    ("Draw!");
+  }
+  if (p1 === "scissors" && p2 === "scissors") {
+    ("Draw!");
+  }
+};
+
+console.log(rps("paper", "paper"));
