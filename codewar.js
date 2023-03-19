@@ -166,36 +166,13 @@ function sumTwoSmallestNumbers(numbers) {
 
 console.log(sumTwoSmallestNumbers([10, 343445353, 3453445, 3453545353453]));
 
-const rps = (p1, p2) => {
-  if (p1 === "rock" && p2 === "scissors") {
-    ("Player 1 won!");
-  }
-  if (p1 === "scissors" && p2 === "paper") {
-    ("Player 1 won!");
-  }
-  if (p1 === "paper" && p2 === "rock") {
-    ("Player 1 won!");
-  }
+function testEven(n) {
+  //Your awesome code here!
+  return n % 2 === 0 ? true : false;
+}
 
-  if (p2 === "rock" && p1 === "scissors") {
-    ("Player 2 won!");
-  }
-  if (p2 === "scissors" && p1 === "paper") {
-    ("Player 2 won!");
-  }
-  if (p2 === "paper" && p1 === "rock") {
-    ("Player 2 won!");
-  }
+function setAlarm(employed, vacation) {
+  return employed === true && vacation === false ? true : false;
+}
 
-  if (p1 === "rock" && p2 === "rock") {
-    ("Draw!");
-  }
-  if (p1 === "paper" && p2 === "paper") {
-    ("Draw!");
-  }
-  if (p1 === "scissors" && p2 === "scissors") {
-    ("Draw!");
-  }
-};
-
-console.log(rps("paper", "paper"));
+console.log(setAlarm(false, true));
