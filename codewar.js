@@ -175,4 +175,31 @@ function setAlarm(employed, vacation) {
   return employed === true && vacation === false ? true : false;
 }
 
-console.log(setAlarm(false, true));
+function between(a, b) {
+  // your code here
+  return;
+}
+
+function openOrSenior(data) {
+  // ...
+  let result = [];
+  for (let i = 0; i < data.length; i++) {
+    if (data[i][0] >= 55 && data[i][1] > 7) {
+      result.push("Senior");
+    } else {
+      result.push("Open");
+    }
+  }
+  return result;
+}
+
+const reverseSeq = (n) => {
+  let result = [];
+
+  for (let i = n; i > 0; i--) {
+    result.push(i);
+  }
+  return result;
+};
+
+console.log(reverseSeq(7));
