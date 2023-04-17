@@ -202,4 +202,39 @@ const reverseSeq = (n) => {
   return result;
 };
 
-console.log(reverseSeq(7));
+let a1 = ["a", "b", "c", "c"];
+let b2 = ["a", "b", "c", "c"];
+
+const checkEx = (a1, a2) => {
+  let pts = 0;
+
+  for (let i = 0; i < a1.length; i++) {
+    if (a1[i] === a2[i]) {
+      pts += 4;
+    }
+
+    if (a1[i] !== a2[i] && a2[i] !== "") {
+      pts -= 1;
+    }
+  }
+  return pts < 0 ? 0 : pts;
+
+  /* a1.forEach((e1) =>
+    a2.forEach((e2) => {
+      e1 === e2 ? (pts += 4) : e1 !== e2 && e2 !== "" ? (pts -= 1) : 0;
+    })
+  );
+
+  return a2 < 0 ? 0 : pts; */
+};
+
+console.log(checkEx(a1, b2));
+
+const xor = (a, b) => (a === b ? false : a || b ? true : false);
+
+const removSmall = (n) => {
+  let min = Math.min(...n);
+  return n.filter((e) => e !== min);
+};
+
+console.log(removSmall([2, 3, 4, 6, 1, 1]));
