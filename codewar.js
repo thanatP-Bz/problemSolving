@@ -122,8 +122,6 @@ function friend(friends) {
   return friends.filter((f) => f.length === 4);
 }
 
-console.log(friend(["Love", "Your", "Face", "1"]));
-
 function sortArray(array) {
   // Return a sorted array.
   let odd = array.filter((odd) => odd % 2).sort((a, b) => a - b);
@@ -163,8 +161,6 @@ function sumTwoSmallestNumbers(numbers) {
     .slice(0, 2)
     .reduce((a, b) => a + b);
 }
-
-console.log(sumTwoSmallestNumbers([10, 343445353, 3453445, 3453545353453]));
 
 function testEven(n) {
   //Your awesome code here!
@@ -228,8 +224,6 @@ const checkEx = (a1, a2) => {
   return a2 < 0 ? 0 : pts; */
 };
 
-console.log(checkEx(a1, b2));
-
 const xor = (a, b) => (a === b ? false : a || b ? true : false);
 
 const removSmall = (n) => {
@@ -237,4 +231,31 @@ const removSmall = (n) => {
   return n.filter((e) => e !== min);
 };
 
-console.log(removSmall([2, 3, 4, 6, 1, 1]));
+const rev = (num) => num.reverse();
+
+const consec = [1, 2, 3, 4, 5, 6];
+
+const checkConsecNum = (num) => {
+  for (let i = 0; i < num.length; i++) {
+    console.log(num[i]);
+  }
+};
+
+const hello = (name) => {
+  return `Hello, ${
+    name ? name.charAt(0).toUpperCase() + name.slice(1).toLowerCase() : "World"
+  }!`;
+};
+
+const oddLenth = [17, 17, 3, 17, 17, 17, 17];
+const stray = (num) => {
+  return num.map((n, idx) => {
+    return n + idx;
+  });
+};
+
+const strays = (numbers) => {
+  const result = numbers.find((number) => numbers.indexOf(number));
+  return result;
+};
+console.log(strays([17, 17, 3, 17, 17, 17, 17]));
