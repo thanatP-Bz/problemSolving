@@ -247,15 +247,38 @@ const hello = (name) => {
   }!`;
 };
 
-const oddLenth = [17, 17, 3, 17, 17, 17, 17];
-const stray = (num) => {
-  return num.map((n, idx) => {
-    return n + idx;
-  });
-};
-
-const strays = (numbers) => {
+/* const strays = (numbers) => {
   const result = numbers.find((number) => numbers.indexOf(number));
   return result;
 };
-console.log(strays([17, 17, 3, 17, 17, 17, 17]));
+console.log(strays([3, 4, 7, 9, 10]));
+
+const strayNum = [2, 4, 6, 7, 8];
+ */
+
+//find will return the first element of the array if they found it otherwise returns undefined
+/* const straysNumber = (number) => {
+  return number.find((num) => number.indexOf(num));
+};
+
+console.log(straysNumber(numArr));
+*/
+/* let numArr = [1, 2, 3, 6, 4, 5];
+
+const checkConsec = (arr) => {
+  for (let i = 0; i < arr.length - 1; i++) {
+    if (arr[i + 1] != arr[i] + 1) {
+      return arr[i + 1];
+    }
+    return null;
+  }
+};
+
+console.log(checkConsec(numArr));
+ */
+
+const str = "sumo";
+
+const munbling = (s) => s.split("-");
+
+console.log(munbling(str));
