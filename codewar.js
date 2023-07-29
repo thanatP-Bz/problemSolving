@@ -277,8 +277,18 @@ const checkConsec = (arr) => {
 console.log(checkConsec(numArr));
  */
 
-const str = "sumo";
+/* const str = "sumo";
 
-const munbling = (s) => s.split("-");
+const munbling = (s) => {
+  return s.split("").map((c, i) => c.repeat(i));
+};
 
-console.log(munbling(str));
+console.log(munbling(str)); */
+
+let numArr = [1, 2, 3, 6, 4, 5];
+
+const findNum = (num) => {
+  return num.find((n) => num.indexOf(n) === num.lastIndexOf(n));
+};
+
+console.log(findNum(numArr));
