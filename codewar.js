@@ -285,10 +285,20 @@ const munbling = (s) => {
 
 console.log(munbling(str)); */
 
-let numArr = [1, 2, 3, 6, 4, 5];
+/* let numArr = [1, 2, 3, 6, 4, 5];
 
 const findNum = (num) => {
   return num.find((n) => num.indexOf(n) === num.lastIndexOf(n));
 };
 
 console.log(findNum(numArr));
+ */
+
+const twoName = (name) => {
+  return name
+    .split(" ")
+    .map((el) => el[0])
+    .join(".");
+};
+
+console.log(twoName("Mahome Jagon"));
