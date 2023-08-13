@@ -294,11 +294,29 @@ const findNum = (num) => {
 console.log(findNum(numArr));
  */
 
-const twoName = (name) => {
+/* const twoName = (name) => {
   return name
     .split(" ")
     .map((el) => el[0])
     .join(".");
 };
+ */
 
-console.log(twoName("Mahome Jagon"));
+/* const position = (letter) => {
+  const al = "0abcdefghijklmnopqrstuvwxyz";
+  return `Position of alphabet:${al.indexOf(letter)}`;
+};
+
+console.log(position("a")); */
+
+/* a reduce = ? b reduce = ?
+check a or b is bigger than - the number */
+/* const findDiff = (a, b) => {
+  return Math.abs(
+    a.reduce((acc, curr) => acc * curr) - b.reduce((acc, curr) => acc * curr)
+  );
+}; */
+
+/* - loop reverse the array
+- how to give the index of sheep and ignore the wolf
+- if the wolf infront of index of sheep warm that is going to be eaten otherwise pls go away */
