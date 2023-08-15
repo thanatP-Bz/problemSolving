@@ -57,15 +57,29 @@ console.log(sum([]));
 console.log(solve("ERnd")); */
 
 /* n = 1 2 3  */
-const capital = (w) => {
+const capital = (word) => {
+  const w = word.split("");
+
   const output = [];
   for (i = 0; i < w.length; i++) {
     if (w[i] === w[i].toUpperCase()) {
-      console.log("yes cap");
-    } else {
-      console.log("no capital");
+      output.push(i);
     }
   }
+  return output;
 };
 
-capital("tesT");
+console.log(capital("tDsT"));
+
+/* loop trough array
+check if a[i] + 1 =  */
+
+/* const num = [0, 1, 2, 3, 5, 8, 13];
+
+function removeEveryOther(arr) {
+
+  return arr.filter((_, index) => index % 2 === 0);
+}
+
+console.log(removeEveryOther(num));
+ */
