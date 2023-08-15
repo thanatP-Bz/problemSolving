@@ -33,14 +33,39 @@ warnTheSheep(array1);
 
 console.log(expressionMatter(1, 2, 3)); */
 
-function noBoringZeros(n) {
-  let str = n.toString().split(" ");
-  // your code
-  for (let i = 0; i < str.length; i++) {
-    if (str[str.length - 1] === "0") {
-      str.pop();
+/* const num = [0, 1, 2, 3, 5, 8, 13];
+
+const take = (arr, n) => {
+  return arr.slice(0, n);
+};
+
+console.log(take(num, 4)); */
+
+/* function sum(numbers) {
+  return numbers.reduce((acc, curr) => acc + curr, 0);
+}
+
+console.log(sum([]));
+ */
+
+/* function solve(s) {
+  //..
+  
+  
+}
+
+console.log(solve("ERnd")); */
+
+/* n = 1 2 3  */
+const capital = (w) => {
+  const output = [];
+  for (i = 0; i < w.length; i++) {
+    if (w[i] === w[i].toUpperCase()) {
+      console.log("yes cap");
     } else {
-      return +str.join();
+      console.log("no capital");
     }
   }
-}
+};
+
+capital("tesT");
