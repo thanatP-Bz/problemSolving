@@ -57,7 +57,7 @@ console.log(sum([]));
 console.log(solve("ERnd")); */
 
 /* n = 1 2 3  */
-const capital = (word) => {
+/* const capital = (word) => {
   const w = word.split("");
 
   const output = [];
@@ -70,7 +70,7 @@ const capital = (word) => {
 };
 
 console.log(capital("tDsT"));
-
+ */
 /* loop trough array
 check if a[i] + 1 =  */
 
@@ -83,3 +83,16 @@ function removeEveryOther(arr) {
 
 console.log(removeEveryOther(num));
  */
+
+function strCount(str, letter) {
+  //code here
+  let sum = [];
+  for (let i = 0; i < str.length; i++) {
+    if (str[i] === letter) {
+      sum.push(i);
+    }
+  }
+  return sum.length;
+}
+
+console.log(strCount("gagaseseaggg", "g"));
