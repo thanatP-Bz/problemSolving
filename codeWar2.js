@@ -84,7 +84,7 @@ function removeEveryOther(arr) {
 console.log(removeEveryOther(num));
  */
 
-function strCount(str, letter) {
+/* function strCount(str, letter) {
   //code here
   let sum = [];
   for (let i = 0; i < str.length; i++) {
@@ -95,4 +95,36 @@ function strCount(str, letter) {
   return sum.length;
 }
 
-console.log(strCount("gagaseseaggg", "g"));
+console.log(strCount("gagaseseaggg", "g")); */
+
+/*
+has to have an empty array
+
+check interger and limit 
+
+reduce => a + b = limit ? return limit 
+
+*/
+/* function findMultiples(integer, limit) {
+  //your code here
+  const a = [];
+  let int = 1;
+
+  while (int * integer <= limit) {
+    a.push(int * integer);
+    int++;
+  }
+  return a;
+}
+
+console.log(findMultiples(5, 35)); */
+
+function feast(beast, dish) {
+  //your function here
+  const b = beast.split("");
+  const d = dish.split("");
+
+  return b[0] === d[0] && b[b.length - 1] === d[d.length - 1];
+}
+
+console.log(feast("rtem galic", "rgalic"));
