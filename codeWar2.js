@@ -119,7 +119,7 @@ reduce => a + b = limit ? return limit
 
 console.log(findMultiples(5, 35)); */
 
-function feast(beast, dish) {
+/* function feast(beast, dish) {
   //your function here
   const b = beast.split("");
   const d = dish.split("");
@@ -127,4 +127,9 @@ function feast(beast, dish) {
   return b[0] === d[0] && b[b.length - 1] === d[d.length - 1];
 }
 
-console.log(feast("rtem galic", "rgalic"));
+console.log(feast("rtem galic", "rgalic")); */
+function getRealFloor(n) {
+  return n > 13 ? n - 2 : n > 0 ? n - 1 : n;
+}
+
+console.log(getRealFloor(14));
