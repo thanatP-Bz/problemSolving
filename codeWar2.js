@@ -128,8 +128,20 @@ console.log(findMultiples(5, 35)); */
 }
 
 console.log(feast("rtem galic", "rgalic")); */
-function getRealFloor(n) {
+/* function getRealFloor(n) {
   return n > 13 ? n - 2 : n > 0 ? n - 1 : n;
 }
 
 console.log(getRealFloor(14));
+ */
+function remove(string) {
+  let str = string.split("");
+
+  return str;
+  /* 
+  if (str[str.length - 1] === "!") {
+    return str.pop();
+  } */
+}
+
+console.log(remove("test!"));
