@@ -144,4 +144,18 @@ function remove(string) {
   } */
 }
 
-console.log(remove("test!"));
+function howMuchILoveYou(nbPetals) {
+  // your code
+  let arr = [
+    "I love you",
+    "a little",
+    "a lot",
+    "passionately",
+    "madly",
+    "not at all",
+  ];
+  for (let i = 0; i <= nbPetals; i++) {
+    arr.push(arr[i]);
+  }
+  return arr[nbPetals - 1];
+}
