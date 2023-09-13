@@ -144,7 +144,7 @@ function remove(string) {
   } */
 }
 
-function howMuchILoveYou(nbPetals) {
+/* function howMuchILoveYou(nbPetals) {
   // your code
   let arr = [
     "I love you",
@@ -158,4 +158,18 @@ function howMuchILoveYou(nbPetals) {
     arr.push(arr[i]);
   }
   return arr[nbPetals - 1];
+} */
+
+/* function between(a, b) {
+  // your code here
+  const arr = [];
+
+  for (let i = a; i <= b; i++) {
+    arr.push(i);
+  }
+
+  return arr;
 }
+
+console.log(between(-2, 4));
+ */
