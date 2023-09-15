@@ -172,4 +172,30 @@ function remove(string) {
 }
 
 console.log(between(-2, 4));
- */
+/* 70 <= score < 80	'C'
+60 <= score < 70	'D'
+0 <= score < 60 */
+/* 
+function getGrade(s1, s2, s3) {
+  // Code here
+  let num = [s1, s2, s3];
+
+  const avg = num.reduce((a, b) => a + b) / num.length;
+
+  if (avg >= 90) {
+    return "A";
+  } else if (avg >= 80) {
+    return "B";
+  } else if (avg >= 70) {
+    return "C";
+  } else if (avg >= 60) {
+    return "D";
+  } else {
+    return "F";
+  }
+}
+console.log(getGrade(70, 70, 70)); */
+
+function multiTable(number) {
+  // good luck
+}
