@@ -196,6 +196,6 @@ function getGrade(s1, s2, s3) {
 }
 console.log(getGrade(70, 70, 70)); */
 
-function multiTable(number) {
+/* function multiTable(number) {
   // good luck
-}
+} */
