@@ -199,3 +199,24 @@ console.log(getGrade(70, 70, 70)); */
 /* function multiTable(number) {
   // good luck
 } */
+
+function calculateAge(y, c) {
+  if (y < c) {
+    let n = c - y;
+    if (n === 1) {
+      return "You are 1 year old.";
+    }
+    return `You are ${n} years old.`;
+  }
+  if (y > c) {
+    let n = y - c;
+    if (n === 1) {
+      return "You will be born in 1 year.";
+    }
+    return `You will be born in ${n} years.`;
+  } else {
+    return "You were born this very year!";
+  }
+}
+
+console.log(calculateAge(1993, 1992));

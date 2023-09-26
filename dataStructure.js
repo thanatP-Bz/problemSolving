@@ -11,7 +11,7 @@
   },
 }; */
 
-class LinkedList {
+/* class LinkedList {
   constructor(value) {
     this.head = {
       value: value,
@@ -61,3 +61,6 @@ myLinkedList.append(16);
 myLinkedList.prepend(4);
 myLinkedList.printList();
 console.log(myLinkedList);
+ */
+
+console.log(250 % 150);
