@@ -200,7 +200,7 @@ console.log(getGrade(70, 70, 70)); */
   // good luck
 } */
 
-function calculateAge(y, c) {
+/* function calculateAge(y, c) {
   if (y < c) {
     let n = c - y;
     if (n === 1) {
@@ -219,4 +219,31 @@ function calculateAge(y, c) {
   }
 }
 
-console.log(calculateAge(1993, 1992));
+console.log(calculateAge(1993, 1992)); */
+
+/* const arr1 = [1, 3, 6, 4];
+
+const twoSum = (arr, goal) => {
+  const index = [];
+
+  for (let i = 0; i < arr.length; i++) {
+    for (let j = i + 1; j < arr.length; j++) {
+      if (arr[i] + arr[j] === goal) {
+        index.push(i);
+        index.push(j);
+      }
+    }
+    return index;
+  }
+};
+
+console.log(twoSum(arr1, 5));
+ */
+
+function countBy(x, n) {
+  var z = [];
+  for (let i = 1; i <= n; i++) {
+    z.push(i * x);
+  }
+  return z;
+}
