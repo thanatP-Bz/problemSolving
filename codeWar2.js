@@ -1,4 +1,4 @@
-const array1 = [
+/* const array1 = [
   "sheep",
   "sheep",
   "sheep",
@@ -7,7 +7,7 @@ const array1 = [
   "wolf",
   "sheep",
   "sheep",
-];
+]; */
 
 /* const warnTheSheep = (arr) => {
   for (let i = arr.length - 1; i >= 1; i--) {
@@ -239,7 +239,7 @@ const twoSum = (arr, goal) => {
 
 console.log(twoSum(arr1, 5));
  */
-
+/* 
 function countBy(x, n) {
   var z = [];
   for (let i = 1; i <= n; i++) {
@@ -247,3 +247,13 @@ function countBy(x, n) {
   }
   return z;
 }
+ */
+const getMiddle = (s) => {
+  return s.length % 2 === 0
+    ? s.slice(s.length / 2 - 1, s.length / 2 + 1)
+    : s[Math.floor(s.length / 2)];
+};
+
+console.log(getMiddle("testmt"));
+
+/*  */
