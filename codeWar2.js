@@ -248,12 +248,26 @@ function countBy(x, n) {
   return z;
 }
  */
-const getMiddle = (s) => {
+/* const getMiddle = (s) => {
   return s.length % 2 === 0
     ? s.slice(s.length / 2 - 1, s.length / 2 + 1)
     : s[Math.floor(s.length / 2)];
 };
 
-console.log(getMiddle("testmt"));
+console.log(getMiddle("testmt")); */
 
 /*  */
+
+function finalGrade(exam, projects) {
+  // final grade
+  if (exam > 90 || projects > 10) {
+    return 100;
+  } else if (exam > 75 && projects >= 5) {
+    return 90;
+  } else if (exam > 50 && projects >= 2) {
+    return 75;
+  }
+  return 0;
+}
+
+console.log(finalGrade(75, 5));

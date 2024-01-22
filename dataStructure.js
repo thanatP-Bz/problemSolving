@@ -62,5 +62,3 @@ myLinkedList.prepend(4);
 myLinkedList.printList();
 console.log(myLinkedList);
  */
-
-console.log(250 % 150);
