@@ -62,3 +62,40 @@ myLinkedList.prepend(4);
 myLinkedList.printList();
 console.log(myLinkedList);
  */
+
+/* function Player(name, maker) {
+  (this.name = name), (this.maker = maker);
+
+  this.sayName = function () {
+    console.log(this.name);
+  };
+
+  this.fullName = function (lastName) {
+    console.log(this.name, lastName);
+  };
+
+  this.sayMaker = function () {
+    console.log(this.maker);
+  };
+}
+
+const playerOne = new Player("Mike", "red");
+console.log(playerOne.name, playerOne.maker);
+
+playerOne.sayName();
+playerOne.sayMaker();
+playerOne.fullName("Teston"); */
+
+function Book(title, author, pages, read) {
+  (this.title = title),
+    (this.author = author),
+    (this.pages = pages),
+    (this.read = read),
+    (this.info = function () {
+      return `${title} by ${author}, ${pages} pages, ${read}`;
+    });
+}
+
+const theHobbit = new Book("The Hobbit", "JRR Token", "295", "not read yet");
+
+console.log(theHobbit.info());

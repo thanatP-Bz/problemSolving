@@ -258,7 +258,7 @@ console.log(getMiddle("testmt")); */
 
 /*  */
 
-function finalGrade(exam, projects) {
+/* function finalGrade(exam, projects) {
   // final grade
   if (exam > 90 || projects > 10) {
     return 100;
@@ -270,4 +270,4 @@ function finalGrade(exam, projects) {
   return 0;
 }
 
-console.log(finalGrade(75, 5));
+console.log(finalGrade(75, 5)); */
