@@ -86,7 +86,7 @@ playerOne.sayName();
 playerOne.sayMaker();
 playerOne.fullName("Teston"); */
 
-function Book(title, author, pages, read) {
+/* function Book(title, author, pages, read) {
   (this.title = title),
     (this.author = author),
     (this.pages = pages),
@@ -98,4 +98,4 @@ function Book(title, author, pages, read) {
 
 const theHobbit = new Book("The Hobbit", "JRR Token", "295", "not read yet");
 
-console.log(theHobbit.info());
+console.log(theHobbit.info()); */
