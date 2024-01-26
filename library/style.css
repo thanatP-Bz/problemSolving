@@ -9,18 +9,18 @@ body {
   height: 100vh;
   background-image: linear-gradient(
     to right top,
-    #cbccbd,
-    #c5c0ad,
-    #c0b49e,
-    #bda891,
-    #ba9b85,
-    #b8927f,
-    #b6887a,
-    #b37f76,
-    #b07874,
-    #ac7172,
-    #a86a71,
-    #a36370
+    #55d893,
+    #49c98e,
+    #3ebb88,
+    #34ac81,
+    #2c9e7a,
+    #279572,
+    #218c6b,
+    #1c8363,
+    #167d59,
+    #127750,
+    #0d7146,
+    #0a6b3c
   );
   background-repeat: no-repeat;
   background-position: center;
@@ -52,7 +52,7 @@ nav {
   text-transform: uppercase;
 }
 
-.button {
+.add-btn {
   font-size: 1rem;
   cursor: pointer;
   display: inline-block;
@@ -79,8 +79,13 @@ nav {
     rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
+.add-btn:hover {
+  box-shadow: none;
+}
+
 .form-control {
   position: absolute;
+  display: none;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -93,6 +98,7 @@ nav {
 
 form {
   padding: 30px 40px;
+  position: relative;
 }
 
 form h3 {
@@ -109,7 +115,6 @@ form h3 {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  align-items: center;
   gap: 12px;
 }
 
@@ -126,13 +131,12 @@ form h3 {
 
 .input input {
   width: 100%;
-  display: block;
   padding: 10px;
   border-radius: 4px;
   border: 2px solid #f0f0f0;
 }
 
-.input-control button {
+.button-control .add {
   margin-top: 1rem;
   font-size: 1rem;
   cursor: pointer;
@@ -152,9 +156,55 @@ form h3 {
   font-weight: 700;
   text-align: center;
   padding: 16px 14px 18px;
-  color: #333;
-  background-color: #e2e2e2;
+  color: #fff;
+  background-color: #5ac2a6;
   height: 48px;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
     rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+
+.button-control .cancel {
+  margin-top: 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+  display: inline-block;
+  outline: none;
+  cursor: pointer;
+  font-size: 14px;
+  line-height: 1;
+  border-radius: 500px;
+  transition-property: background-color, border-color, color, box-shadow, filter;
+  transition-duration: 0.3s;
+  border: 1px solid transparent;
+  letter-spacing: 2px;
+  min-width: 160px;
+  text-transform: uppercase;
+  white-space: normal;
+  font-weight: 700;
+  text-align: center;
+  padding: 16px 14px 18px;
+  color: #fff;
+  background-color: #c83030;
+  height: 48px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+.input-control button:hover {
+  box-shadow: none;
+}
+
+.check-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.check-box label {
+  font-size: 1.2rem;
+  margin-right: 10px;
+}
+
+.check-box input {
+  width: 15px;
+  height: 15px;
 }
