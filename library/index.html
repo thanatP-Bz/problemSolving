@@ -13,22 +13,57 @@
     <link rel="stylesheet" href="style.css" />
     <title>Document</title>
   </head>
-  <body>
-    <div class="content">
-      <nav>
-        <div class="navbar">
-          <div class="logo">library</div>
 
-          <button type="button" class="add-btn">
-            <i class="fa-solid fa-plus plus"></i>
-            add book
-          </button>
+  <body>
+    <nav>
+      <div class="navbar">
+        <div class="logo">library</div>
+
+        <button type="button" class="add-btn">
+          <i class="fa-solid fa-plus plus"></i>
+          add book
+        </button>
+      </div>
+    </nav>
+
+    <div class="card-control">
+      <div class="card">
+        <div class="title">
+          <h3>title:</h3>
+          <p>killer moon</p>
         </div>
-      </nav>
+        <div class="author">
+          <h3>author:</h3>
+          <p>robert</p>
+        </div>
+        <div class="pages">
+          <h3>pages:</h3>
+          <p>234</p>
+        </div>
+        <p>read</p>
+        <button type="submit">delete</button>
+      </div>
+
+      <div class="card">
+        <div class="title">
+          <h3>title:</h3>
+          <p>killer moon</p>
+        </div>
+        <div class="author">
+          <h3>author:</h3>
+          <p>robert</p>
+        </div>
+        <div class="pages">
+          <h3>pages:</h3>
+          <p>234</p>
+        </div>
+        <p>read</p>
+        <button type="submit">delete</button>
+      </div>
     </div>
 
     <div class="form-control">
-      <form id="form">
+      <form id="new-book-form">
         <h3>enter new book</h3>
         <div class="input-control">
           <div class="input">
@@ -52,7 +87,7 @@
           </div>
 
           <div class="button-control">
-            <button type="button" class="add">add</button>
+            <button type="submit" class="add">add</button>
             <button type="button" class="cancel">cancel</button>
           </div>
         </div>

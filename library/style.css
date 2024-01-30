@@ -5,8 +5,8 @@
 }
 
 body {
-  width: 100%;
   height: 100vh;
+  position: relative;
   background-image: linear-gradient(
     to right top,
     #55d893,
@@ -27,14 +27,7 @@ body {
   background-size: cover;
 }
 
-.content {
-  position: relative;
-  width: 100%;
-  height: 100%;
-}
-
 nav {
-  width: 100%;
   padding: 10px;
 }
 
@@ -85,7 +78,7 @@ nav {
 
 .form-control {
   position: absolute;
-  display: none;
+  display: flex;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -97,7 +90,7 @@ nav {
 }
 
 form {
-  padding: 30px 40px;
+  padding: 20px 30px;
   position: relative;
 }
 
@@ -131,13 +124,13 @@ form h3 {
 
 .input input {
   width: 100%;
-  padding: 10px;
+  padding: 5px;
   border-radius: 4px;
   border: 2px solid #f0f0f0;
 }
 
 .button-control .add {
-  margin-top: 1rem;
+  margin-right: 2px;
   font-size: 1rem;
   cursor: pointer;
   display: inline-block;
@@ -163,8 +156,10 @@ form h3 {
     rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
 }
 
-.button-control .cancel {
+.button-control .cancel,
+.card-control .card button {
   margin-top: 1rem;
+  margin-left: 2px;
   font-size: 1rem;
   cursor: pointer;
   display: inline-block;
@@ -207,4 +202,37 @@ form h3 {
 .check-box input {
   width: 15px;
   height: 15px;
+}
+
+.card-control {
+  display: flex;
+  padding: 20px;
+  gap: 20px;
+}
+
+.card-control .card {
+  padding: 20px 30px;
+  background-color: #fff;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.card-control .card h3 {
+  text-transform: uppercase;
+  font-size: 1.2rem;
+}
+
+.card-control .card p {
+  font-size: 1.2rem;
+}
+
+.card-control .card .title,
+.author,
+.pages {
+  display: flex;
+  align-items: center;
+  gap: 15px;
 }
