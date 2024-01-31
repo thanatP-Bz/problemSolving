@@ -26,8 +26,30 @@ function addBookToLibrary() {
 }
 
 function render() {
+  let cardTitle = document.createElement("div");
+  let cardAuthor = document.createElement("div");
+  let cardPages = document.createElement("div");
+  let cardRead = document.createElement("div");
+  let deleteButton = document.createElement("button");
+
   for (let i = 0; i < myLibrary.length; i++) {
-    console.log(myLibrary[i]);
+    let book = myLibrary[i];
+
+    cardTitle.innerHTML = "<h3>title:</h3><p>" + book.title + "</p>";
+    cardAuthor.innerHTML = "<h3>author:</h3><p>" + book.author + "</p>";
+    cardPages.innerHTML = "<h3>pages:</h3><p>" + book.pages + "</p>";
+
+    cardRead.innerText = book.read ? "Read" : "Not read yet";
+    deleteButton.innerText = "Delete";
+
+    let cardContainer = document.getElementById("card");
+    cardContainer.setAttribute("class", "card-control card");
+
+    cardContainer.appendChild(cardTitle);
+    cardContainer.appendChild(cardAuthor);
+    cardContainer.appendChild(cardPages);
+    cardContainer.appendChild(cardRead);
+    cardContainer.appendChild(deleteButton);
   }
 }
 
