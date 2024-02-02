@@ -17,7 +17,10 @@
   <body>
     <nav>
       <div class="navbar">
-        <div class="logo">library</div>
+        <div class="logo">my library</div>
+
+        <!-- notification -->
+        <div class="alert"></div>
 
         <button type="button" class="add-btn">
           <i class="fa-solid fa-plus plus"></i>
@@ -26,7 +29,8 @@
       </div>
     </nav>
 
-    <div id="card"></div>
+    <!-- card -->
+    <div class="card-control"></div>
 
     <div class="form-control">
       <form id="new-book-form">
@@ -44,7 +48,7 @@
 
           <div class="input">
             <label for="pages">pages:</label>
-            <input type="text" id="pages" name="pages" />
+            <input type="number" id="pages" name="pages" />
           </div>
 
           <div class="check-box">

@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@300&family=Lobster&family=Nunito+Sans:opsz,wght@6..12,200&family=Quicksand&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -25,6 +27,7 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  font-family: "Nunito Sans", sans-serif;
 }
 
 nav {
@@ -76,9 +79,25 @@ nav {
   box-shadow: none;
 }
 
+/* notification alert*/
+.alert {
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  display: none;
+  background-color: #fff;
+  padding: 16px 25px;
+  border-radius: 500px;
+  letter-spacing: 2px;
+}
+
+.show-alert {
+  display: inline-block;
+}
+
 .form-control {
   position: absolute;
-  display: flex;
+  display: none;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -97,6 +116,7 @@ form {
 form h3 {
   font-size: 1.2rem;
   margin-bottom: 0.5rem;
+  color: #333;
   padding: 0.5rem;
   text-align: center;
   letter-spacing: 1px;
@@ -127,6 +147,10 @@ form h3 {
   padding: 5px;
   border-radius: 4px;
   border: 2px solid #f0f0f0;
+}
+
+.input input:focus {
+  outline: none;
 }
 
 .button-control .add {
@@ -205,35 +229,56 @@ form h3 {
 }
 
 .card-control {
+  padding: 10px;
+  gap: 10px;
+  width: 100%;
+  max-width: 98%;
+  margin: 0 auto;
   display: flex;
-  padding: 20px;
-  gap: 20px;
+  align-items: center;
+  flex-wrap: wrap;
+  align-content: center;
 }
 
 .card {
   padding: 20px 30px;
   background-color: #fff;
-  width: 300px;
   border-radius: 20px;
   display: flex;
   justify-content: center;
   flex-direction: column;
   gap: 10px;
+  max-width: 300px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
 }
 
-.card-control .card h3 {
+.card h3 {
   text-transform: uppercase;
   font-size: 1.2rem;
 }
 
-.card-control .card p {
+.card p {
   font-size: 1.2rem;
 }
 
-.card .title,
-.author,
-.pages {
+.card .card-title,
+.card-author,
+.card-pages,
+.card-read {
   display: flex;
   align-items: center;
   gap: 15px;
+}
+
+.card-read i {
+  font-size: 1.5rem;
+}
+
+.read-icon {
+  color: green;
+}
+
+.not-read-icon {
+  color: rgb(220, 220, 13);
 }
