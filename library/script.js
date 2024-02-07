@@ -55,7 +55,6 @@ function getBookFromLocalStorage() {
 function removeItemFromLocalStorage(index) {
   let items = getBookFromLocalStorage();
 
-  console.log(items.length > 0 ? "yes" : "no");
   if (items.length > 0) {
     items = items.filter(function (item, i) {
       return i !== index;
@@ -64,8 +63,6 @@ function removeItemFromLocalStorage(index) {
     localStorage.setItem("myLibrary", JSON.stringify(items));
   }
 }
-
-removeItemFromLocalStorage();
 
 /* load item from local storage */
 window.addEventListener("load", () => {
@@ -161,7 +158,7 @@ function showAlert(message) {
   interValId = setInterval(() => {
     alert.classList.remove("show-alert");
     clearInterval(interValId);
-  }, 4000);
+  }, 3000);
 }
 
 /* form submit */
