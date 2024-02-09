@@ -86,16 +86,18 @@ playerOne.sayName();
 playerOne.sayMaker();
 playerOne.fullName("Teston"); */
 
-/* function Book(title, author, pages, read) {
-  (this.title = title),
-    (this.author = author),
-    (this.pages = pages),
-    (this.read = read),
-    (this.info = function () {
-      return `${title} by ${author}, ${pages} pages, ${read}`;
-    });
+function makeAdding(firstNumber) {
+  // "first" is scoped within the makeAdding function
+  /*   const first = firstNumber; */
+  return function resulting(secondNumber) {
+    // "second" is scoped within the resulting function
+    /*  const second = secondNumber; */
+    return firstNumber + secondNumber;
+  };
 }
+// but we've not seen an example of a "function"
+// being returned, thus far - how do we use it?
 
-const theHobbit = new Book("The Hobbit", "JRR Token", "295", "not read yet");
-
-console.log(theHobbit.info()); */
+const add5 = makeAdding(5);
+const add6 = makeAdding(6);
+console.log(add6(4)); // logs 7

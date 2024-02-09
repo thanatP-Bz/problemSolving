@@ -271,3 +271,35 @@ console.log(getMiddle("testmt")); */
 }
 
 console.log(finalGrade(75, 5)); */
+
+/* function incrementArray(number) {
+  const result = [];
+
+  // Iterate over the array
+  for (let i = number[0]; i <= number[number.length - 1]; i++) {
+    // Push the current element + 1 to the result array
+    result.push(i);
+  }
+
+  return result;
+}
+
+console.log(incrementArray([1, 3, 6])); */
+/* function mergeArrays(arr1, arr2) {
+  let joinArr = arr1.concat(arr2);
+  joinArr = new Set(joinArr);
+  joinArr = Array.from(joinArr);
+  return joinArr.sort((n1, n2) => n1 - n2);
+} */
+
+function reverseLetter(str) {
+  //coding and coding..
+  if (str.length === 0) {
+    return str;
+  } else {
+    let nonAlphabet = str.replace(/[^a-z]/gi, "");
+    return nonAlphabet.split("").reverse().join("");
+  }
+}
+
+console.log(reverseLetter(""));
