@@ -292,7 +292,7 @@ console.log(incrementArray([1, 3, 6])); */
   return joinArr.sort((n1, n2) => n1 - n2);
 } */
 
-function reverseLetter(str) {
+/* function reverseLetter(str) {
   //coding and coding..
   if (str.length === 0) {
     return str;
@@ -302,4 +302,10 @@ function reverseLetter(str) {
   }
 }
 
-console.log(reverseLetter(""));
+console.log(reverseLetter("")); */
+
+function sayHello(name, city, state) {
+  return `Hello, ${name.join(" ")} ! Welcome to ${city}, ${state}!`;
+}
+
+console.log(sayHello(["thanat", "Benz"], "SP", "MD"));
