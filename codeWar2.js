@@ -304,8 +304,18 @@ console.log(incrementArray([1, 3, 6])); */
 
 console.log(reverseLetter("")); */
 
-function sayHello(name, city, state) {
+/* function sayHello(name, city, state) {
   return `Hello, ${name.join(" ")} ! Welcome to ${city}, ${state}!`;
 }
 
 console.log(sayHello(["thanat", "Benz"], "SP", "MD"));
+ */
+function printerError(str) {
+  let count = 0;
+  for (let i = 0; i < str.length; i++) {
+    if (str[i] > "m") {
+      count++;
+    }
+  }
+  return count + "/" + str.length;
+}
