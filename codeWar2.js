@@ -310,7 +310,7 @@ console.log(reverseLetter("")); */
 
 console.log(sayHello(["thanat", "Benz"], "SP", "MD"));
  */
-function printerError(str) {
+/* function printerError(str) {
   let count = 0;
   for (let i = 0; i < str.length; i++) {
     if (str[i] > "m") {
@@ -318,4 +318,9 @@ function printerError(str) {
     }
   }
   return count + "/" + str.length;
+} */
+
+/* function distinct(a) {
+  return Array.from(new Set(a));
 }
+ */
