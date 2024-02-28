@@ -325,16 +325,10 @@ console.log(sayHello(["thanat", "Benz"], "SP", "MD"));
 }
  */
 
-function multiTable(number) {
-  let table = "";
+const doubleChar = (str) =>
+  str
+    .split("")
+    .map((str) => str + str)
+    .join("");
 
-  for (let i = 1; i <= 10; i++) {
-    let result = number * i;
-
-    table += `${i} * ${number} = ${result}\n`;
-  }
-
-  return table;
-}
-
-console.log(multiTable(5));
+console.log(doubleChar("hello"));
