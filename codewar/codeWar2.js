@@ -325,10 +325,31 @@ console.log(sayHello(["thanat", "Benz"], "SP", "MD"));
 }
  */
 
-const doubleChar = (str) =>
-  str
-    .split("")
-    .map((str) => str + str)
-    .join("");
+/* function lovefunc(flower1, flower2) {
+  // moment of truth
+  return (
+    (flower1 % 2 === 0 && flower2 % 2 !== 0) ||
+    (flower1 % 2 !== 0 && flower2 % 2 === 0)
+  );
+}
 
-console.log(doubleChar("hello"));
+console.log(lovefunc(110, 456)); */
+
+/* function smallEnough(a, limit) {
+  for (let i = 0; i < a.length; i++) {
+    return a[i] <= limit;
+  }
+}
+console.log(smallEnough([4, 6, 8], 10));
+
+const smallMap = (a, limit) => a.every((n) => n <= limit);
+
+console.log(smallMap([4, 6, 8], 10));
+ */
+
+/* const minValue = (values) =>
+  parseInt([...new Set(values)].sort((a, b) => a - b).join(""));
+
+console.log(minValue([1, 3, 1])); */
+
+
